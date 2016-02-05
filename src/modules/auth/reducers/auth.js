@@ -9,13 +9,13 @@ export function reducer(state = initialState, action = {}) {
     switch (action.type) {
         case AuthActions.LOAD:
             return Object.assign({}, state, {loading:true});
-        // case LOAD_SUCCESS:
-        //     return {
-        //         ...state,
-        //         loading: false,
-        //         loaded: true,
-        //         user: action.result
-        //     };
+        case AuthActions.LOAD_SUCCESS:
+            return {
+                ...state,
+                loading: false,
+                loaded: true,
+                user: action.result
+            };
         // case LOAD_FAIL:
         //     return {
         //         ...state,
