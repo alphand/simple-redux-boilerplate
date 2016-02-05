@@ -14,6 +14,8 @@ export default class App extends Component {
   render() {
     // we can use ES6's object destructuring to effectively 'unpack' our props
     const { counter, actions, children} = this.props;
+    console.log('props', this.props);
+    
     return (
       <div className="main-app-container">
         <div className="main-app-nav">
@@ -51,7 +53,8 @@ App.propTypes = {
  */
 function mapStateToProps(state) {
   return {
-    counter: state.counter
+    counter: state.counter,
+    modAuth: state.modAuth
   };
 }
 

@@ -39,7 +39,6 @@ class Counter extends Component {
 
     render() {
         const props = this.props;
-        console.log('props', this.props);
         return (
             <div className="counter-container">
                 <div className="counter-num-label">{props.counter}</div>

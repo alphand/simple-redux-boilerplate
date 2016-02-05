@@ -5,6 +5,8 @@ import counter from './counter';
 /* This captures routes as state */
 import { routeReducer } from 'react-router-redux';
 
+import AuthModReducer from '../modules/auth/reducers';
+
 /**
  * combineReducers is important to understand. As your app might grow in size
  * and complexity, you will likely begin to split your reducers into separate
@@ -18,8 +20,11 @@ import { routeReducer } from 'react-router-redux';
  * More info: http://rackt.org/redux/docs/api/combineReducers.html
  */
 
+ console.log("audaduad", AuthModReducer);
+
 const rootReducer = combineReducers({
   counter, // you might be used to: counter: counter,
+  modAuth: AuthModReducer.AuthReducers.reducer,
   routing: routeReducer // add routeReducer as a prop on state
 });
 

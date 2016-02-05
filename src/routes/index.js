@@ -4,6 +4,8 @@ import App from '../containers/App';
 import { NotFoundView, Counter, FooView, BarView } from '../components';
 import { browserHistory } from 'react-router';
 
+import AuthApp from '../modules/auth/AuthApp';
+
 export default () => {
   return (
     <Router history={browserHistory}>
@@ -15,6 +17,7 @@ export default () => {
         <IndexRoute component={Counter}/>
         <Route path="foo" component={FooView}/>
         <Route path="bar" component={BarView}/>
+        <Route path="auth" component={AuthApp}/>
         <Route path="*" component={NotFoundView} />
       </Route>
     </Router>
