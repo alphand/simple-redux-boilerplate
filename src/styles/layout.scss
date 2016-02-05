@@ -1,0 +1,8 @@
+@import 'foundation-sites/scss/util/util';
+@import 'foundation-sites/scss/global';
+@import 'foundation-sites/scss/grid/grid';
+
+@mixin foundation-everything() {
+  	@include foundation-global-styles;
+    @include foundation-flex-grid;
+}
