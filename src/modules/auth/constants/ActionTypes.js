@@ -7,15 +7,3 @@ export const LOGIN_FAIL = 'landing/auth/LOGIN_FAIL';
 export const LOGOUT = 'landing/auth/LOGOUT';
 export const LOGOUT_SUCCESS = 'landing/auth/LOGOUT_SUCCESS';
 export const LOGOUT_FAIL = 'landing/auth/LOGOUT_FAIL';
-
-// export default {
-//     LOAD ,
-//     LOAD_SUCCESS,
-//     LOAD_FAIL,
-//     LOGIN,
-//     LOGIN_SUCCESS,
-//     LOGIN_FAIL,
-//     LOGOUT,
-//     LOGOUT_SUCCESS,
-//     LOGOUT_FAIL
-// }
