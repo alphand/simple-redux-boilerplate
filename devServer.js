@@ -13,7 +13,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('/api/*', (req, res) =>{
+app.get('/api/*', (req, res) => {
     res.json({auth:true});
 });
 

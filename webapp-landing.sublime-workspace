@@ -63,48 +63,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/routes/index.js",
-			"settings":
-			{
-				"buffer_size": 1728,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/store/configureStore.dev.js",
-			"settings":
-			{
-				"buffer_size": 1587,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/reducers/index.js",
-			"settings":
-			{
-				"buffer_size": 1075,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 1 file for \"modAuth\"\n\nUnable to open ~/Developments/NodeDevelopments/webapp-landing/src/reducers/src/**/*.js\n0 matches",
-			"settings":
-			{
-				"buffer_size": 128,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "src/containers/App.js",
-			"settings":
-			{
-				"buffer_size": 3034,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -163,22 +121,22 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/helpers",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/actions",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/components",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/constants",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/containers",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/reducers",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/reducers",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/routes",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/store",
-		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/store/middleware"
+		"/C/Users/niko.darmawan/Developments/Landify",
+		"/C/Users/niko.darmawan/Developments/Landify/src",
+		"/C/Users/niko.darmawan/Developments/Landify/src/components",
+		"/C/Users/niko.darmawan/Developments/Landify/src/modules",
+		"/C/Users/niko.darmawan/Developments/Landify/src/modules/auth",
+		"/C/Users/niko.darmawan/Developments/Landify/src/store",
+		"/C/Users/niko.darmawan/Developments/Landify/src/store/middleware"
 	],
 	"file_history":
 	[
+		"/C/Users/niko.darmawan/Developments/Landify/src/store/configureStore.dev.js",
+		"/C/Users/niko.darmawan/Developments/Landify/src/routes/index.js",
+		"/C/Users/niko.darmawan/Developments/Landify/.eslintrc",
+		"/C/Users/niko.darmawan/Developments/Landify/devServer.js",
+		"/C/Users/niko.darmawan/Developments/Landify/src/containers/App.js",
+		"/C/Users/niko.darmawan/Developments/Landify/src/reducers/index.js",
 		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/package.json",
 		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/index.js",
 		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/config.js",
@@ -228,6 +186,9 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"*.js",
+			"./src/**/*.js",
+			"/src/**/*.js",
 			"./src/**/*.js",
 			"*.js",
 			"*.scss,/Users/nikodarmawan/Developments/NodeDevelopments/webapp-wedding/src",
@@ -239,6 +200,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"auth",
 			"modAuth",
 			"adjustedUrl",
 			"result",
@@ -276,157 +238,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/routes/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1728,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								828,
-								828
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/store/configureStore.dev.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1587,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								822,
-								822
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/reducers/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1075,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								940,
-								940
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"default_dir": "/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing",
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/containers/App.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3034,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								678,
-								678
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -478,6 +291,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"routes/in",
+				"src\\routes\\index.js"
+			],
 			[
 				"packa",
 				"package.json"

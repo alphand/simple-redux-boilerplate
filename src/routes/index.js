@@ -9,29 +9,29 @@ import AuthApp from '../modules/auth/containers/AuthApp';
 import { isLoaded as isAuthLoaded, load as loadAuth } from '../modules/auth/actions/AuthActions';
 
 const Routes = (storeObj) => {
-    const store = storeObj.store;
+  const store = storeObj.store;
 
-    const requireLogin = (nextState, replace, cb) => {
-        console.log('req login', nextState, store);
+  const requireLogin = (nextState, replaceState, cb) => {
+    console.log('req login', nextState, store);
 
-        function checkAuth() {
-            const { auth: { user }} = store.getState();
-            console.log('user', user);
-            if (!user) {
-                // oops, not logged in, so can't be here!
-                replaceState(null, '/');
-            }
-            cb();
-        }
+    function checkAuth() {
+      const { auth: { user } } = store.getState();
+      console.log('user', user);
+      if (!user) {
+          // oops, not logged in, so can't be here!
+          replaceState(null, '/');
+      }
+      cb();
+    }
 
-        if (!isAuthLoaded(store.getState())) {
-            store.dispatch(loadAuth()).then(checkAuth);
-        } else {
-            checkAuth();
-        }
-    }; 
+    if (!isAuthLoaded(store.getState())) {
+      store.dispatch(loadAuth()).then(checkAuth);
+    } else {
+      checkAuth();
+    }
+  };
 
-    return (
+  return (
         <Router history={browserHistory}>
             {/* 'App' acts as a wrapper for the child components */}
             <Route path="/" component={App}>

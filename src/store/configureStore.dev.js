@@ -4,7 +4,7 @@ import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 import DevTools from '../containers/DevTools';
 import { syncHistory } from 'react-router-redux';
-import { browserHistory } from 'react-router'
+import { browserHistory } from 'react-router';
 import clientMiddleware from './middleware/clientMiddleware';
 // The reduxRouterMiddleware will look for route actions created by push, replace, etc.
 // and applies them to the history.
@@ -27,7 +27,7 @@ module.exports = function configureStore(initialState = undefined, client) {
         DevTools.instrument()
     )(createStore);
 
-    const store = finalCreateStore(rootReducer, initialState)
+    const store = finalCreateStore(rootReducer, initialState);
 
   // Required for replaying actions from devtools to work
   reduxRouterMiddleware.listenForReplays(store);
