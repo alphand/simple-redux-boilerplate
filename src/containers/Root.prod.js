@@ -8,14 +8,15 @@ import Routes from '../routes';
 module.exports = class Root extends Component {
   render() {
     const { store, history } = this.props;
+    
     return (
       /**
        * Provider is a component provided to us by the 'react-redux' bindings that
        * wraps our app - thus making the Redux store/state available to our 'connect()'
        * calls in component hierarchy below.
        */
-      <Provider store={store}>
-        <Routes history={history} />
+      <Provider store={store} >
+        <Routes store={store} history={history} />
       </Provider>
     );
   }

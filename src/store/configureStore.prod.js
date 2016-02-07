@@ -3,13 +3,16 @@ import rootReducer from '../reducers';
 import thunk from 'redux-thunk';
 import { syncHistory } from 'react-router-redux';
 import { browserHistory } from 'react-router'
+import clientMiddleware from './middleware/clientMiddleware';
 const reduxRouterMiddleware = syncHistory(browserHistory);
 
-const finalCreateStore = compose(
-  applyMiddleware(thunk, reduxRouterMiddleware)
-)(createStore);
 
-module.exports = function configureStore(initialState) {
+
+
+module.exports = function configureStore(initialState, client) {
+    const finalCreateStore = compose(
+        applyMiddleware(thunk, clientMiddleware(client), reduxRouterMiddleware)
+    )(createStore);
   const store = finalCreateStore(rootReducer, initialState);
   return store;
 };

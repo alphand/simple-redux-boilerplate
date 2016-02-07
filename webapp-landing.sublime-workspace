@@ -1,0 +1,523 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"client",
+				"clientMiddleware"
+			],
+			[
+				"cli",
+				"clientMiddleware"
+			],
+			[
+				"appl",
+				"applyMiddleware"
+			],
+			[
+				"Loa",
+				"LOAD"
+			],
+			[
+				"Auth",
+				"AuthActions"
+			],
+			[
+				"Au",
+				"AuthActions"
+			],
+			[
+				"map",
+				"mapStateToProps"
+			],
+			[
+				"moda",
+				"modAuthReducers"
+			],
+			[
+				"mod",
+				"modAuthReducers"
+			],
+			[
+				"fulcrum",
+				"fulcrumAuthAppState"
+			],
+			[
+				"React",
+				"React.Component	Component Template (ES2015)"
+			],
+			[
+				"Da",
+				"Days"
+			],
+			[
+				"Te",
+				"Text"
+			],
+			[
+				"Text",
+				"TextInput"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/routes/index.js",
+			"settings":
+			{
+				"buffer_size": 1728,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/store/configureStore.dev.js",
+			"settings":
+			{
+				"buffer_size": 1587,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/reducers/index.js",
+			"settings":
+			{
+				"buffer_size": 1075,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1 file for \"modAuth\"\n\nUnable to open ~/Developments/NodeDevelopments/webapp-landing/src/reducers/src/**/*.js\n0 matches",
+			"settings":
+			{
+				"buffer_size": 128,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/containers/App.js",
+			"settings":
+			{
+				"buffer_size": 3034,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"last_filter": "set java",
+		"selected_items":
+		[
+			[
+				"set java",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package install ",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/helpers",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/actions",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/components",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/constants",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/containers",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/reducers",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/reducers",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/routes",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/store",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/store/middleware"
+	],
+	"file_history":
+	[
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/package.json",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/index.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/config.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/actions/AuthActions.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/store/middleware/clientMiddleware.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/containers/Root.dev.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/helpers/APIClient.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/.babelrc",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/reducers/auth.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/containers/AuthApp.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/constants/ActionTypes.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/components/Counter.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/reducers/index.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/AuthApp.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/actions/CounterActions.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/routes/index.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/containers/App.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/reducers/index.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/components/LoginView.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/reducers/counter.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/modules/auth/components/index.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/styles/layout.scss",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/webpack.config.dev.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing/src/styles/main.scss",
+		"/Users/nikodarmawan/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/nikodarmawan/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/nikodarmawan/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/react-slingshot/src/components/FuelSavingsApp.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-wedding/src/containers/AppWedding/AppWedding.scss",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-wedding/src/containers/AppWedding/AppWedding.jsx",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-wedding/src/containers/AppWedding/AppWedding.js",
+		"/Users/nikodarmawan/Developments/NodeDevelopments/webapp-wedding/src/containers/Home-new/home.js",
+		"/Users/nikodarmawan/Developments/StaticSiteGenerator/beginner-affiliate/config.toml",
+		"/Users/nikodarmawan/Developments/ReactNativeDevelopment/Dictionary/english_indo.json",
+		"/Users/nikodarmawan/Developments/AndroidDevelopments/gasdroid/index.android.js",
+		"/Users/nikodarmawan/Developments/AndroidDevelopments/gasdroid/index.ios.js",
+		"/Users/nikodarmawan/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/README.md",
+		"/Users/nikodarmawan/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/Default (OSX).sublime-keymap",
+		"/Users/nikodarmawan/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"./src/**/*.js",
+			"*.js",
+			"*.scss,/Users/nikodarmawan/Developments/NodeDevelopments/webapp-wedding/src",
+			"*.scss"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"modAuth",
+			"adjustedUrl",
+			"result",
+			"case",
+			"...",
+			"const",
+			"anding/auth/",
+			"const",
+			"redux-example",
+			"appmodules",
+			"NotFoundView",
+			"modules",
+			"\"",
+			"@import \"foundation-sites/",
+			"foundation-sites/",
+			"incrementIfOdd",
+			"incrementAsync",
+			"FulcrumApp",
+			".alignment",
+			"alignment"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								828,
+								828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/store/configureStore.dev.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								822,
+								822
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/reducers/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								940,
+								940
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/nikodarmawan/Developments/NodeDevelopments/webapp-landing",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/containers/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								678,
+								678
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webapp-landing.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"loginap",
+				"src/components/auth/LoginApp.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

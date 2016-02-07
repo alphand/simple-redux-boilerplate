@@ -20,11 +20,9 @@ import AuthModReducer from '../modules/auth/reducers';
  * More info: http://rackt.org/redux/docs/api/combineReducers.html
  */
 
- console.log("audaduad", AuthModReducer);
-
 const rootReducer = combineReducers({
   counter, // you might be used to: counter: counter,
-  modAuth: AuthModReducer.AuthReducers.reducer,
+  auth: AuthModReducer.AuthReducers.reducer,
   routing: routeReducer // add routeReducer as a prop on state
 });
 

@@ -1,6 +1,4 @@
 import * as AuthActions from '../constants/ActionTypes';
-console.log("Authact", AuthActions);
-
 
 export function isLoaded(globalState) {
     return globalState.auth && globalState.auth.loaded;
@@ -9,7 +7,10 @@ export function isLoaded(globalState) {
 export function load() {
     return {
         types: [ AuthActions.LOAD, AuthActions.LOAD_SUCCESS, AuthActions.LOAD_FAIL],
-        promise: (client) => client.get('/loadAuth')
+        promise: (client) => {
+            console.log('client in AA', client);
+            client.get('/loadAuth')
+        }
     };
 }
 
