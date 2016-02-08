@@ -11,7 +11,7 @@ const formatUrl = (path) => {
 class APIClient {
     constructor (req) {
         methods.forEach((method) => {
-            this[method] = (path, {params, data} = {}) => new Promise((resolve, reject) => {
+            this[method] = (path, { params, data } = {}) => new Promise((resolve, reject) => {
                 const request = superagent[method](formatUrl(path));
 
                 if(params) {
@@ -22,7 +22,7 @@ class APIClient {
                     request.send(data);
                 }
 
-                request.end((err, {body} = {}) => err? reject(body || err) :  resolve(body))
+                request.end((err, {body} = {}) => err? reject(body || err) :  resolve(body));
             })
         });
     }

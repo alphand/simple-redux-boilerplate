@@ -7,10 +7,7 @@ export function isLoaded(globalState) {
 export function load() {
     return {
         types: [ AuthActions.LOAD, AuthActions.LOAD_SUCCESS, AuthActions.LOAD_FAIL],
-        promise: (client) => {
-            console.log('client in AA', client);
-            client.get('/loadAuth')
-        }
+        promise: (client) => client.get('/loadAuth')
     };
 }
 
