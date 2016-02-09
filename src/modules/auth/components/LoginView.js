@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function LoginView() {
+export default function LoginView({onSubmit}) {
     return (
         <form>
             <div className="row">
@@ -21,7 +21,10 @@ export default function LoginView() {
             </div>
             <div className="row">
                 <div className="small-12 columns text-right">
-                    <button className="button success" type="button" >Log in</button>
+                    <button className="button success" type="button"
+                        onClick={(e) => {
+                            onClick()
+                        }} >Log in</button>
                 </div>
             </div>
             
