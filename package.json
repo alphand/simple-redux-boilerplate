@@ -1,7 +1,7 @@
 {
-  "name": "generator-simple-redux",
+  "name": "Landify-App",
   "version": "1.0.0",
-  "description": "My simple redux application.",
+  "description": "Web Application for lead pages.",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -47,6 +47,8 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.0",
+    "express-session": "^1.13.0",
     "foundation-sites": "^6.1.2",
     "history": "^2.0.0-rc2",
     "react": "^0.14.3",
@@ -55,6 +57,7 @@
     "react-router": "^2.0.0-rc5",
     "react-router-redux": "^2.1.0",
     "redux-thunk": "^1.0.3",
+    "socket.io": "^1.4.5",
     "superagent": "^1.7.2"
   }
 }
