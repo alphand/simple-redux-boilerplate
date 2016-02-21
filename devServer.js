@@ -1,29 +1,24 @@
 import appConfig from './src/config';
 
-const http = require('http');
-const SocketIo =  require('socket.io');
+import httpProxy from 'http-proxy';
+import http from 'http';
 
 const path = require('path');
 const express = require('express');
-const session = require('express-session');
-const bodyParser = require('body-parser');
 const webpack = require('webpack');
 const wpConfig = require('./webpack.config.dev');
 
 const app = express();
 const compiler = webpack(wpConfig);
 
-const server = new http.Server(app);
-const io = new SocketIo(server);
-io.path('/ws');
+const targetUrl = 'http://' + appConfig.apiHost + ':' + appConfig.apiPort;
+// const pretty = new PrettyError();
 
-app.use(session({
-  secret: 'react and redux rule!!!!',
-  resave: false,
-  saveUninitialized: false,
-  cookie: { maxAge: 60000 }
-}));
-app.use(bodyParser.json());
+const server = new http.Server(app);
+const proxy = httpProxy.createProxyServer({
+  target: targetUrl,
+  ws: true
+});
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
@@ -32,8 +27,31 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.use('/api/*', (req, res) => {
-    res.json({auth:true, appple:true});
+// Proxy to API server
+app.use('/api', (req, res) => {
+  proxy.web(req, res, {target: targetUrl});
+});
+
+app.use('/ws', (req, res) => {
+  proxy.web(req, res, {target: targetUrl + '/ws'});
+});
+
+server.on('upgrade', (req, socket, head) => {
+  proxy.ws(req, socket, head);
+});
+
+// added the error handling to avoid https://github.com/nodejitsu/node-http-proxy/issues/527
+proxy.on('error', (error, req, res) => {
+  let json;
+  if (error.code !== 'ECONNRESET') {
+    console.error('proxy error', error);
+  }
+  if (!res.headersSent) {
+    res.writeHead(500, {'content-type': 'application/json'});
+  }
+
+  json = {error: 'proxy_error', reason: error.message};
+  res.end(JSON.stringify(json));
 });
 
 app.get('*', (req, res) => {
@@ -48,20 +66,3 @@ const runnable = app.listen(appConfig.port, appConfig.host, (err) => {
     console.info('----\n==> ✅  %s is running, talking to API server on %s.', appConfig.app.title, appConfig.apiPort);
     console.info('==> 💻  Open http://%s:%s in a browser to view the app.', appConfig.host, appConfig.port);
 });
-
-const bufferSize = 100;
-const messageBuffer = new Array(bufferSize);
-var messageIndex = 0;
-
-io.on('connection', (socket) => {
-
-    socket.emit('news', {msg:'Hello world! from socket.io server'});
-
-    socket.on('msg', (data) => {
-        data.id = messageIndex;
-        messageBuffer[messageIndex % bufferSize] = data;
-        messageIndex++;
-        io.emit('msg', data);
-    });
-});
-io.listen(runnable);
