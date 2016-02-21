@@ -37,7 +37,8 @@ app.use('/ws', (req, res) => {
 });
 
 server.on('upgrade', (req, socket, head) => {
-  proxy.ws(req, socket, head);
+    console.log('receive upgrade request');
+    proxy.ws(req, socket, head);
 });
 
 // added the error handling to avoid https://github.com/nodejitsu/node-http-proxy/issues/527
@@ -48,7 +49,7 @@ proxy.on('error', (error, req, res) => {
   }
   if (!res.headersSent) {
     res.writeHead(500, {'content-type': 'application/json'});
-  }
+  } 
 
   json = {error: 'proxy_error', reason: error.message};
   res.end(JSON.stringify(json));
@@ -58,7 +59,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-const runnable = app.listen(appConfig.port, appConfig.host, (err) => {
+const runnable = server.listen(appConfig.port, appConfig.host, (err) => {
     if (err) {
         console.log(err);
         return;
