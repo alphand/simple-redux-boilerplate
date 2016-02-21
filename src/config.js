@@ -1,6 +1,11 @@
 import 'babel-polyfill';
 
-module.export = Object.assign({
+module.exports = Object.assign({
+    host: process.env.HOST || 'localhost',
+    port: process.env.PORT,
     apiHost:process.env.APIHOST || 'localhost',
     apiPort:process.env.APIPORT,
+    app: {
+        title: 'BlueOcean App'
+    }
 })

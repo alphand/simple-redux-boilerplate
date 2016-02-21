@@ -1,4 +1,4 @@
-import appConfig from './src/config';
+import config from '../src/config';
 
 const http = require('http');
 const SocketIo =  require('socket.io');
@@ -7,11 +7,8 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
-const webpack = require('webpack');
-const wpConfig = require('./webpack.config.dev');
 
 const app = express();
-const compiler = webpack(wpConfig);
 
 const server = new http.Server(app);
 const io = new SocketIo(server);
@@ -25,33 +22,23 @@ app.use(session({
 }));
 app.use(bodyParser.json());
 
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  publicPath: wpConfig.output.publicPath
-}));
-
-app.use(require('webpack-hot-middleware')(compiler));
-
-app.use('/api/*', (req, res) => {
+app.use('/*', (req, res) => {
     res.json({auth:true, appple:true});
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-const runnable = app.listen(appConfig.port, appConfig.host, (err) => {
+const runnable = app.listen(config.apiPort, 'localhost', (err) => {
     if (err) {
         console.log(err);
         return;
     }
-    console.info('----\n==> ✅  %s is running, talking to API server on %s.', appConfig.app.title, appConfig.apiPort);
-    console.info('==> 💻  Open http://%s:%s in a browser to view the app.', appConfig.host, appConfig.port);
+    
+    console.info('----\n==> 🌎  API is running on port %s', config.apiPort);
+    console.info('==> 💻  Send requests to http://%s:%s', config.apiHost, config.apiPort);
 });
 
 const bufferSize = 100;
 const messageBuffer = new Array(bufferSize);
-var messageIndex = 0;
+let messageIndex = 0;
 
 io.on('connection', (socket) => {
 

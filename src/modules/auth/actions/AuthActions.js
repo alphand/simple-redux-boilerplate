@@ -11,12 +11,14 @@ export function load() {
     };
 }
 
-export function login(name) {
+export function login(username, password, rememberMe) {
     return {
         types: [AuthActions.LOGIN, AuthActions.LOGIN_SUCCESS, AuthActions.LOGIN_FAIL],
         promise: (client) => client.post('/login', {
             data: {
-                name: name
+                username:username,
+                password:password,
+                rememberMe:rememberMe
             }   
         })
     };

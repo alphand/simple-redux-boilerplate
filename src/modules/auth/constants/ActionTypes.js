@@ -7,3 +7,6 @@ export const LOGIN_FAIL = 'landing/auth/LOGIN_FAIL';
 export const LOGOUT = 'landing/auth/LOGOUT';
 export const LOGOUT_SUCCESS = 'landing/auth/LOGOUT_SUCCESS';
 export const LOGOUT_FAIL = 'landing/auth/LOGOUT_FAIL';
+export const REGISTER = 'landing/auth/REGISTER';
+export const REGISTER_SUCCESS = 'landing/auth/REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'landing/auth/REGISTER_FAIL';

@@ -12,11 +12,9 @@ const Routes = (storeObj) => {
   const store = storeObj.store;
 
   const requireLogin = (nextState, replaceState, cb) => {
-    console.log('req login', nextState, store);
 
     function checkAuth() {
       const { auth: { user } } = store.getState();
-      console.log('user', user);
       if (!user) {
           // oops, not logged in, so can't be here!
           replaceState(null, '/');
