@@ -2,7 +2,9 @@
 
 A simple, yet comprehensive React + Redux application, complete with DevTools.
 
-Author: [@tsaiDavid](https://github.com/tsaiDavid/) | [www.davidtsai.codes](https://www.davidtsai.codes)
+Original Author: [@tsaiDavid](https://github.com/tsaiDavid/) | [www.davidtsai.codes](https://www.davidtsai.codes)
+
+Modified By: [@alphand](https://github.com/alphand)
 
 *Let's make this a community effort! Many thanks for all the great suggestions and help that's already underway!*
 
@@ -30,6 +32,8 @@ This project features a super simple UI - just for you to see how everything is 
 ![](https://fat.gfycat.com/WarlikeFrightenedGraywolf.gif)
 
 If you found this helpful, please star/fork/follow me on **[GitHub](https://github.com/tsaiDavid/)** and follow me on **[Twitter](https://twitter.com/tftsai)**! 
+
+If you found this helpful, please star/fork/follow me on **[GitHub](https://github.com/alphand/)** and follow me on **[Twitter](https://twitter.com/nikoadarmawan)**! 
 
 ### Features
 
