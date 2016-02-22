@@ -7,14 +7,14 @@ export function isLoaded(globalState) {
 export function load() {
     return {
         types: [ AuthActions.LOAD, AuthActions.LOAD_SUCCESS, AuthActions.LOAD_FAIL],
-        promise: (client) => client.get('/loadAuth')
+        promise: (client) => client.get('/auth/loadAuth')
     };
 }
 
 export function login(username, password, rememberMe) {
     return {
         types: [AuthActions.LOGIN, AuthActions.LOGIN_SUCCESS, AuthActions.LOGIN_FAIL],
-        promise: (client) => client.post('/login', {
+        promise: (client) => client.post('/auth/login', {
             data: {
                 username:username,
                 password:password,
@@ -27,6 +27,6 @@ export function login(username, password, rememberMe) {
 export function logout() {
     return {
         types: [AuthActions.LOGOUT, AuthActions.LOGOUT_SUCCESS, AuthActions.LOGOUT_FAIL],
-        promise: (client) => client.get('/logout')
+        promise: (client) => client.get('/auth/logout')
     };
 }

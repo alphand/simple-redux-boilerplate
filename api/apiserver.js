@@ -1,4 +1,6 @@
 import config from '../src/config';
+import * as actions from './actions/index';
+import mapUrl from 'utils/url';
 
 const http = require('http');
 const SocketIo =  require('socket.io');
@@ -22,8 +24,30 @@ app.use(session({
 }));
 app.use(bodyParser.json());
 
-app.use('/*', (req, res) => {
-    res.json({auth:true, appple:true});
+
+app.use((req, res) => {
+    const splittedUrlPath = req.url.split('?')[0].split('/').slice(1);
+    const {action, params} = mapUrl(actions, splittedUrlPath)
+
+    if (action) {
+        action(req, params)
+            .then((result) => {
+                if (result instanceof Function){
+                    result(res);
+                } else {
+                    res.json(result);
+                }
+            }, (err) => {
+                if (err && err.redirect) {
+                    res.redirect(err.redirect);
+                } else {
+                    console.error('API Error:', err);
+                    res.status(err.status || 500).json(err);
+                }
+            })
+    } else {
+        res.status(404).end('NOT FOUND');
+    }
 });
 
 const runnable = app.listen(config.apiPort, 'localhost', (err) => {
