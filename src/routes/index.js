@@ -32,16 +32,21 @@ const Routes = (storeObj) => {
   return (
         <Router history={browserHistory}>
             {/* 'App' acts as a wrapper for the child components */}
+            <Route path="/auth" component={AuthApp} />
+
             <Route path="/" component={App}>
-                {/* IndexRoute is the initial component that is loaded,
+                {
+                    /* IndexRoute is the initial component that is loaded,
                     other routes are loaded according to the component
-                    property specified here */}
+                    property specified here */
+                }
                 <IndexRoute component={Counter}/>
                 <Route path="foo" component={FooView}/>
                 <Route path="bar" component={BarView}/>
-                <Route path="auth" component={AuthApp} onEnter={requireLogin}/>
                 <Route path="*" component={NotFoundView} />
             </Route>
+
+
         </Router>
     );
 };
