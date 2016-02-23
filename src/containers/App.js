@@ -18,7 +18,7 @@ export default class App extends Component {
     return (
       <div className="main-app-container">
         <div className="main-app-nav">
-          <div id="main-app-title">Simple Redux Boilerplate</div>
+          <div id="main-app-title">WorkTime Budget</div>
           <div>
             <span><Link to="/">Home</Link></span>
             <span><Link to="/foo">Foo</Link></span>

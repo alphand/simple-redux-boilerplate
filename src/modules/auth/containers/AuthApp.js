@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import MainLayout from '../../../containers/Layout/MainLayout'
 import { LoginView } from '../components'
 
 class AuthApp extends Component {
     render() {
         return(
-            <div className="main-container">
+            <MainLayout>
                 <LoginView />
-            </div>
+            </MainLayout>
         )
     }
 }
